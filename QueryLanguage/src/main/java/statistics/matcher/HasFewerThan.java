@@ -13,7 +13,7 @@ public class HasFewerThan implements Matcher {
     private String fieldName;
 
     public HasFewerThan(int value, String category) {
-        value = value;
+        this.value = value;
         fieldName = "get" + Character.toUpperCase(category.charAt(0)) + category.substring(1, category.length());
     }
 
